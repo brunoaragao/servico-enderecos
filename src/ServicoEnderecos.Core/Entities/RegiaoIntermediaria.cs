@@ -2,11 +2,11 @@
 
 public class RegiaoIntermediaria
 {
-    public RegiaoIntermediaria(int id, string nome, int ufId)
+    public RegiaoIntermediaria(int id, string nome, int uFId)
     {
         Id = id;
         Nome = nome;
-        UFId = ufId;
+        UFId = uFId;
     }
 
     public int Id { get; private set; }

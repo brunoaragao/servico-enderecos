@@ -1,11 +1,35 @@
 {
-	"name": "C# (.NET)",
-	"image": "mcr.microsoft.com/devcontainers/dotnet:0-7.0",
+	"name": "Dev Container",
+	"service": "dev",
+	"workspaceFolder": "/workspaces/${localWorkspaceFolderBasename}",
+	"dockerComposeFile": "docker-compose.yml",
 	"customizations": {
 		"vscode": {
+			"settings": {
+				"sqltools.connections": [
+					{
+						"mysqlOptions": {
+							"authProtocol": "default",
+							"enableSsl": "Disabled"
+						},
+						"previewLimit": 50,
+						"server": "db",
+						"port": 3306,
+						"driver": "MySQL",
+						"name": "app",
+						"database": "enderecos",
+						"username": "root",
+						"password": "root"
+					}
+				]
+			},
 			"extensions": [
-				"fernandoescolar.vscode-solution-explorer"
+				"fernandoescolar.vscode-solution-explorer",
+				"mtxr.sqltools-driver-mysql"
 			]
 		}
+	},
+	"containerEnv": {
+		"ConnectionStrings__App": "server=db;database=enderecos;user=root;password=root"
 	}
 }

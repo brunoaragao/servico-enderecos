@@ -1,11 +1,4 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-
-namespace ServicoEnderecos.Core.Entities;
-
+﻿namespace ServicoEnderecos.Core.Entities;
 
 public class Regiao
 {
