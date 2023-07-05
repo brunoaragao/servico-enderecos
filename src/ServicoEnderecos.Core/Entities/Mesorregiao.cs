@@ -2,11 +2,11 @@
 
 public class Mesorregiao
 {
-    public Mesorregiao(int id, string nome, int ufId)
+    public Mesorregiao(int id, string nome, int uFId)
     {
         Id = id;
         Nome = nome;
-        UFId = ufId;
+        UFId = uFId;
     }
 
     public int Id { get; private set; }
